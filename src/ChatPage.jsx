@@ -64,34 +64,29 @@ export default function ChatPage() {
     <div
       style={{
         width: "100%",
-        maxWidth: "500px",
-        height: "100%",
-        margin: "0 auto",
+        height: "100vh",
         display: "flex",
         flexDirection: "column",
         background: "#0f172a",
         color: "white",
-        padding: "10px",
         boxSizing: "border-box",
       }}
     >
-      <h2 style={{ textAlign: "center", marginBottom: "10px" }}>
+
+      <h2 style={{ textAlign: "center", marginBottom: "8px" }}>
         {me} 💬 {other}
       </h2>
 
       {/* Message list */}
       <div
         style={{
-          flex: 1,
-          minHeight: 0,
-          overflowY: "auto",
-          background: "#1e293b",
-          padding: "12px 10px",
-          borderRadius: "10px",
-          marginBottom: "10px",
-          boxSizing: "border-box",
-          scrollBehavior: "smooth"
-        }}
+        flex: 1,
+        overflowY: "auto",
+        background: "#1e293b",
+        padding: "12px",
+        borderRadius: "0",
+        boxSizing: "border-box",
+      }}
       >
 
         {loading && <p>Loading messages...</p>}
@@ -114,7 +109,8 @@ export default function ChatPage() {
         style={{
             display: "flex",
             gap: "8px",
-            padding: "8px 0",
+            padding: "8px",
+            width: "100%",
             boxSizing: "border-box"
         }}
      >   

@@ -16,7 +16,7 @@ export default function ChatBubble({ isMine, message }) {
     >
       <div
         style={{
-        maxWidth: "80%",
+        maxWidth: "85%",
         padding: "10px 14px",
         borderRadius: "16px",
         background: isMine ? "#4ade80" : "#3b82f6",

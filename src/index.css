@@ -76,3 +76,11 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media (max-width: 768px) {
+  html, body, #root {
+    padding: 0;
+    margin: 0;
+    background: #0f172a;
+  }
+}
