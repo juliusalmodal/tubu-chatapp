@@ -2,7 +2,8 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState, useRef } from "react";
 import ChatBubble from "./ChatBubble";
 
-const API_URL = "http://localhost:7071/api/messages";
+//const API_URL = "http://localhost:7071/api/messages";
+const API_URL = "https://tubu-chat-app-hya8b9nhguh9gucs.southeastasia-01.azurewebsites.net/api/messages";
 
 export default function ChatPage() {
   const { userId } = useParams();
