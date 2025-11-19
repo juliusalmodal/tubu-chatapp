@@ -63,13 +63,16 @@ export default function ChatPage() {
   return (
     <div
       style={{
-        width: "100%",
-        height: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0f172a",
-        color: "white",
-        boxSizing: "border-box",
+      width: "100%",
+      height: "100vh",
+      display: "flex",
+      flexDirection: "column",
+      background: "#0f172a",
+      color: "white",
+      boxSizing: "border-box",
+      padding: window.innerWidth > 768 ? "10px" : "0px", // desktop = 10px padding, mobile = 0
+      maxWidth: window.innerWidth > 768 ? "600px" : "100%", // desktop only
+      margin: window.innerWidth > 768 ? "0 auto" : "0", // center on desktop, not on mobile
       }}
     >
 
@@ -84,7 +87,7 @@ export default function ChatPage() {
         overflowY: "auto",
         background: "#1e293b",
         padding: "12px",
-        borderRadius: "0",
+        borderRadius: window.innerWidth > 768 ? "10px" : "0px",
         boxSizing: "border-box",
       }}
       >
@@ -107,12 +110,12 @@ export default function ChatPage() {
       <form
         onSubmit={sendMessage}
         style={{
-            display: "flex",
-            gap: "8px",
-            padding: "8px",
-            width: "100%",
-            boxSizing: "border-box"
-        }}
+        display: "flex",
+        gap: "8px",
+        padding: window.innerWidth > 768 ? "10px 0" : "8px",
+        boxSizing: "border-box",
+        width: "100%",
+      }}
      >   
         <input
             value={input}
